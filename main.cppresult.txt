@@ -1,0 +1,22 @@
+In file included from cur.cpp:13:0:
+kudlaev/main.cpp: In copy constructor 'MyList<T>::MyList(const MyList<T>&)':
+kudlaev/main.cpp:89:3: error: '_default' was not declared in this scope
+   _default = A._default;
+   ^
+kudlaev/main.cpp: In constructor 'MyList<T>::MyList(T, T)':
+kudlaev/main.cpp:99:3: error: '_default' was not declared in this scope
+   _default = def;
+   ^
+kudlaev/main.cpp: In member function 'T MyList<T>::get(int)':
+kudlaev/main.cpp:107:11: error: '_default' was not declared in this scope
+    return _default;
+           ^
+kudlaev/main.cpp: In member function 'MyList<T>& MyList<T>::operator=(const MyList<T>&)':
+kudlaev/main.cpp:125:3: error: '_default' was not declared in this scope
+   _default = A._default;
+   ^
+kudlaev/main.cpp: In member function 'T MyList<T>::remove(int)':
+kudlaev/main.cpp:200:26: error: '_default' was not declared in this scope
+   if (index != 0) return _default;
+                          ^
+./check.sh: line 24: ./a.out: No such file or directory

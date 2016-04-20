@@ -86,7 +86,7 @@ public:
 		listnumber = A.listnumber + 1;
 		next = A.next;
 		data = A.data;
-		_default = A._default;
+		this->_default = A._default;
 	}
 
 	MyList() {
@@ -96,7 +96,7 @@ public:
 
 	MyList(T def, T dat) {
 		listnumber = 0;
-		_default = def;
+		this->_default = def;
 		data = dat;
 		next = NULL;
 	}
@@ -104,7 +104,7 @@ public:
 	T get(int index) {
 		int ind = index + 1;
 		if (ind > len()) {
-			return _default;
+			return this->_default;
 		}
 		MyList* tmp = this;
 		MyList tmp1;
@@ -122,7 +122,7 @@ public:
 			return *this;
 		}
 		listnumber = A.listnumber;
-		_default = A._default;
+		this->_default = A._default;
 		data = A.data;
 		delete next;
 		next = A.next;
@@ -197,7 +197,7 @@ public:
 			index--;
 		}
 		
-		if (index != 0) return _default;
+		if (index != 0) return this->_default;
 
 		tmpprev->next = tmp->next;
 		T old = tmp->data;

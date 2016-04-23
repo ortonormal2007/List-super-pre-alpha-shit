@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 
+#define _CRT_SECURE_NO_WARNINGS
+
 using namespace std;
 
 ostream& operator<<(ostream& o, string& s)
@@ -100,7 +102,7 @@ public:
 		data = dat;
 		next = NULL;
 	}
-	
+
 	T get(int index) {
 		int ind = index + 1;
 		if (ind > len()) {
@@ -117,7 +119,7 @@ public:
 		return tmp1.data;
 	}
 
-	MyList& operator= (const MyList& A) {	
+	MyList& operator= (const MyList& A) {
 		if (this == &A) {
 			return *this;
 		}
@@ -129,7 +131,7 @@ public:
 		return *this;
 	}
 
-	~MyList() {
+	virtual ~MyList() {
 		next = NULL;
 	}
 
@@ -196,7 +198,7 @@ public:
 			tmp = tmp->next;
 			index--;
 		}
-		
+
 		if (index != 0) return this->_default;
 
 		tmpprev->next = tmp->next;
@@ -220,7 +222,7 @@ public:
 
 
 
-AbstractList<string>* get_init()
+MyList<string>* get_init()
 {
 	string e("EMPTY!");
 	string d("Hello world!");
@@ -248,37 +250,45 @@ AbstractList<string>* get_init()
 //}
 
 
-//int main()
-//{
-//
-//	MyList<string>* example = new MyList<string>("ass", "GOVNO");
-//
-//	example->push("ops");
-//
-//	cout << example->get(0) << endl;
-//
-//
-//
-//	system("pause");
-//
-//	
+int main()
+{
+
+	MyList<string>* ex = get_init();
+	for(int t = 0; t < 1000000; t++){
+	ex->remove(1);
+	}
+
+	ex->print(cout);
+
+
+	//example->push("ops");
+
+	//example->print(cout);
+
+	//cout << example->get(0) << endl;
+
+
+
+	//system("pause");
+
+
 //	for (int i = 0; i < 1000000; i++)
 //	{
 //		int a = rand();
 //		string s = to_string(a);
-//		example->push(s);		
+//		example->push(s);
 //	}
-//
+
 //	cout << "Current length = " << example->len() << endl;
-//
+
 //	string randomString = example->remove(rand());
-//
+
 //	cout << "Random deleted element = " << randomString << endl;
-//
+
 //	cout << "New length = " << example->len() << endl;
-//
-//
-//	//example->print(cout);
-//
-//	return 0;
-//}
+
+
+	//example->print(cout);
+
+	return 0;
+}

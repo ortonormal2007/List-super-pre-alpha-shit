@@ -4,4 +4,3 @@
 [ RUN      ] ListTest.ListLen
 [       OK ] ListTest.ListLen
 [ RUN      ] ListTest.DeleteOne
-[       OK ] ListTest.DeleteOne

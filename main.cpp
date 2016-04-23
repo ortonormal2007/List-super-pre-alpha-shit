@@ -190,8 +190,10 @@ public:
 	T remove(int ind)
 	{
 		int index = ind;
+		if (index < 0) return this->_default;
 		MyList* tmp = this->next;
 		MyList* tmpprev = this;
+		
 		while (index != 0 && tmp->next != NULL)
 		{
 			tmpprev = tmp;

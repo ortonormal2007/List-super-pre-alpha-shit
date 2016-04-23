@@ -250,15 +250,15 @@ MyList<string>* get_init()
 //}
 
 
-int main()
-{
+//int main()
+//{
 
-	MyList<string>* ex = get_init();
-	for(int t = 0; t < 1000000; t++){
-	ex->remove(1);
-	}
+//	MyList<string>* ex = get_init();
+//	for(int t = 0; t < 1000000; t++){
+//	ex->remove(1);
+//	}
 
-	ex->print(cout);
+//	ex->print(cout);
 
 
 	//example->push("ops");
@@ -290,5 +290,5 @@ int main()
 
 	//example->print(cout);
 
-	return 0;
-}
+//	return 0;
+//}

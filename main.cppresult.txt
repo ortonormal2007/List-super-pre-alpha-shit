@@ -7,3 +7,5 @@ shit_constr
 [ RUN      ] ListTest.DeleteOne
 shit_constr
 shit
+shit_completely1
+shit_completely1

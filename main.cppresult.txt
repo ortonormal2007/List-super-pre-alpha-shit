@@ -1,6 +1,257 @@
-[==========] Running 7 tests from 1 test case.
-[----------] Global test environment set-up.
-[----------] 7 tests from ListTest
-[ RUN      ] ListTest.ListLen
-[       OK ] ListTest.ListLen
-[ RUN      ] ListTest.DeleteOne
+In file included from cur.cpp:13:0:
+kudlaev/main.cpp:1:1: error: 'dvdsfdsvsfvdsvsdvxcvxcvxc' does not name a type
+ dvdsfdsvsfvdsvsdvxcvxcvxc
+ ^
+cur.cpp: In member function 'virtual void ListTest_ListLen_Test::TestBody()':
+cur.cpp:19:5: error: 'AbstractList' was not declared in this scope
+     AbstractList<string>*l = get_init();
+     ^
+cur.cpp:19:18: error: 'string' was not declared in this scope
+     AbstractList<string>*l = get_init();
+                  ^
+cur.cpp:19:18: note: suggested alternatives:
+In file included from /usr/include/g++/string:39:0,
+                 from /usr/include/g++/stdexcept:39,
+                 from /usr/include/g++/array:38,
+                 from /usr/include/g++/tuple:39,
+                 from /usr/include/g++/functional:55,
+                 from cur.cpp:3:
+/usr/include/g++/bits/stringfwd.h:62:33: note:   'std::string'
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from /usr/pkg/include/gtest/internal/gtest-internal.h:40:0,
+                 from /usr/pkg/include/gtest/gtest.h:57,
+                 from cur.cpp:11:
+/usr/pkg/include/gtest/internal/gtest-port.h:766:23: note:   'testing::internal::string'
+ typedef ::std::string string;
+                       ^
+cur.cpp:19:26: error: 'l' was not declared in this scope
+     AbstractList<string>*l = get_init();
+                          ^
+cur.cpp:19:39: error: 'get_init' was not declared in this scope
+     AbstractList<string>*l = get_init();
+                                       ^
+cur.cpp:21:12: error: type '<type error>' argument given to 'delete', expected pointer
+     delete l;
+            ^
+cur.cpp: In member function 'virtual void ListTest_DeleteOne_Test::TestBody()':
+cur.cpp:26:5: error: 'AbstractList' was not declared in this scope
+     AbstractList<string> *l = get_init();
+     ^
+cur.cpp:26:18: error: 'string' was not declared in this scope
+     AbstractList<string> *l = get_init();
+                  ^
+cur.cpp:26:18: note: suggested alternatives:
+In file included from /usr/include/g++/string:39:0,
+                 from /usr/include/g++/stdexcept:39,
+                 from /usr/include/g++/array:38,
+                 from /usr/include/g++/tuple:39,
+                 from /usr/include/g++/functional:55,
+                 from cur.cpp:3:
+/usr/include/g++/bits/stringfwd.h:62:33: note:   'std::string'
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from /usr/pkg/include/gtest/internal/gtest-internal.h:40:0,
+                 from /usr/pkg/include/gtest/gtest.h:57,
+                 from cur.cpp:11:
+/usr/pkg/include/gtest/internal/gtest-port.h:766:23: note:   'testing::internal::string'
+ typedef ::std::string string;
+                       ^
+cur.cpp:26:27: error: 'l' was not declared in this scope
+     AbstractList<string> *l = get_init();
+                           ^
+cur.cpp:26:40: error: 'get_init' was not declared in this scope
+     AbstractList<string> *l = get_init();
+                                        ^
+cur.cpp:30:12: error: type '<type error>' argument given to 'delete', expected pointer
+     delete l;
+            ^
+cur.cpp: In member function 'virtual void ListTest_AddOne_Test::TestBody()':
+cur.cpp:34:5: error: 'AbstractList' was not declared in this scope
+     AbstractList<string> *l = get_init();
+     ^
+cur.cpp:34:18: error: 'string' was not declared in this scope
+     AbstractList<string> *l = get_init();
+                  ^
+cur.cpp:34:18: note: suggested alternatives:
+In file included from /usr/include/g++/string:39:0,
+                 from /usr/include/g++/stdexcept:39,
+                 from /usr/include/g++/array:38,
+                 from /usr/include/g++/tuple:39,
+                 from /usr/include/g++/functional:55,
+                 from cur.cpp:3:
+/usr/include/g++/bits/stringfwd.h:62:33: note:   'std::string'
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from /usr/pkg/include/gtest/internal/gtest-internal.h:40:0,
+                 from /usr/pkg/include/gtest/gtest.h:57,
+                 from cur.cpp:11:
+/usr/pkg/include/gtest/internal/gtest-port.h:766:23: note:   'testing::internal::string'
+ typedef ::std::string string;
+                       ^
+cur.cpp:34:27: error: 'l' was not declared in this scope
+     AbstractList<string> *l = get_init();
+                           ^
+cur.cpp:34:40: error: 'get_init' was not declared in this scope
+     AbstractList<string> *l = get_init();
+                                        ^
+cur.cpp:35:12: error: expected ';' before 's'
+     string s("fail");
+            ^
+cur.cpp:36:18: error: 's' was not declared in this scope
+     l->insert(1, s);
+                  ^
+cur.cpp:38:12: error: type '<type error>' argument given to 'delete', expected pointer
+     delete l;
+            ^
+cur.cpp: In member function 'virtual void ListTest_AddAndCheckOne_Test::TestBody()':
+cur.cpp:43:5: error: 'AbstractList' was not declared in this scope
+     AbstractList<string> *l = get_init();
+     ^
+cur.cpp:43:18: error: 'string' was not declared in this scope
+     AbstractList<string> *l = get_init();
+                  ^
+cur.cpp:43:18: note: suggested alternatives:
+In file included from /usr/include/g++/string:39:0,
+                 from /usr/include/g++/stdexcept:39,
+                 from /usr/include/g++/array:38,
+                 from /usr/include/g++/tuple:39,
+                 from /usr/include/g++/functional:55,
+                 from cur.cpp:3:
+/usr/include/g++/bits/stringfwd.h:62:33: note:   'std::string'
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from /usr/pkg/include/gtest/internal/gtest-internal.h:40:0,
+                 from /usr/pkg/include/gtest/gtest.h:57,
+                 from cur.cpp:11:
+/usr/pkg/include/gtest/internal/gtest-port.h:766:23: note:   'testing::internal::string'
+ typedef ::std::string string;
+                       ^
+cur.cpp:43:27: error: 'l' was not declared in this scope
+     AbstractList<string> *l = get_init();
+                           ^
+cur.cpp:43:40: error: 'get_init' was not declared in this scope
+     AbstractList<string> *l = get_init();
+                                        ^
+cur.cpp:44:12: error: expected ';' before 's'
+     string s("fail");
+            ^
+cur.cpp:45:18: error: 's' was not declared in this scope
+     l->insert(1, s);
+                  ^
+cur.cpp:47:12: error: type '<type error>' argument given to 'delete', expected pointer
+     delete l;
+            ^
+cur.cpp: In member function 'virtual void ListTest_PopOne_Test::TestBody()':
+cur.cpp:51:5: error: 'AbstractList' was not declared in this scope
+     AbstractList<string> *l = get_init();
+     ^
+cur.cpp:51:18: error: 'string' was not declared in this scope
+     AbstractList<string> *l = get_init();
+                  ^
+cur.cpp:51:18: note: suggested alternatives:
+In file included from /usr/include/g++/string:39:0,
+                 from /usr/include/g++/stdexcept:39,
+                 from /usr/include/g++/array:38,
+                 from /usr/include/g++/tuple:39,
+                 from /usr/include/g++/functional:55,
+                 from cur.cpp:3:
+/usr/include/g++/bits/stringfwd.h:62:33: note:   'std::string'
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from /usr/pkg/include/gtest/internal/gtest-internal.h:40:0,
+                 from /usr/pkg/include/gtest/gtest.h:57,
+                 from cur.cpp:11:
+/usr/pkg/include/gtest/internal/gtest-port.h:766:23: note:   'testing::internal::string'
+ typedef ::std::string string;
+                       ^
+cur.cpp:51:27: error: 'l' was not declared in this scope
+     AbstractList<string> *l = get_init();
+                           ^
+cur.cpp:51:40: error: 'get_init' was not declared in this scope
+     AbstractList<string> *l = get_init();
+                                        ^
+cur.cpp:55:12: error: type '<type error>' argument given to 'delete', expected pointer
+     delete l;
+            ^
+cur.cpp: In member function 'virtual void ListTest_PushPop_Test::TestBody()':
+cur.cpp:83:5: error: 'AbstractList' was not declared in this scope
+     AbstractList<string> *l = get_init();
+     ^
+cur.cpp:83:18: error: 'string' was not declared in this scope
+     AbstractList<string> *l = get_init();
+                  ^
+cur.cpp:83:18: note: suggested alternatives:
+In file included from /usr/include/g++/string:39:0,
+                 from /usr/include/g++/stdexcept:39,
+                 from /usr/include/g++/array:38,
+                 from /usr/include/g++/tuple:39,
+                 from /usr/include/g++/functional:55,
+                 from cur.cpp:3:
+/usr/include/g++/bits/stringfwd.h:62:33: note:   'std::string'
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from /usr/pkg/include/gtest/internal/gtest-internal.h:40:0,
+                 from /usr/pkg/include/gtest/gtest.h:57,
+                 from cur.cpp:11:
+/usr/pkg/include/gtest/internal/gtest-port.h:766:23: note:   'testing::internal::string'
+ typedef ::std::string string;
+                       ^
+cur.cpp:83:27: error: 'l' was not declared in this scope
+     AbstractList<string> *l = get_init();
+                           ^
+cur.cpp:83:40: error: 'get_init' was not declared in this scope
+     AbstractList<string> *l = get_init();
+                                        ^
+cur.cpp:84:12: error: expected ';' before 's'
+     string s("fail");
+            ^
+cur.cpp:85:13: error: 's' was not declared in this scope
+     l->push(s);
+             ^
+cur.cpp:88:12: error: type '<type error>' argument given to 'delete', expected pointer
+     delete l;
+            ^
+cur.cpp: In member function 'virtual void ListTest_PushPop1E3_Test::TestBody()':
+cur.cpp:112:3: error: 'AbstractList' was not declared in this scope
+   AbstractList<string> *l = get_init();
+   ^
+cur.cpp:112:16: error: 'string' was not declared in this scope
+   AbstractList<string> *l = get_init();
+                ^
+cur.cpp:112:16: note: suggested alternatives:
+In file included from /usr/include/g++/string:39:0,
+                 from /usr/include/g++/stdexcept:39,
+                 from /usr/include/g++/array:38,
+                 from /usr/include/g++/tuple:39,
+                 from /usr/include/g++/functional:55,
+                 from cur.cpp:3:
+/usr/include/g++/bits/stringfwd.h:62:33: note:   'std::string'
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from /usr/pkg/include/gtest/internal/gtest-internal.h:40:0,
+                 from /usr/pkg/include/gtest/gtest.h:57,
+                 from cur.cpp:11:
+/usr/pkg/include/gtest/internal/gtest-port.h:766:23: note:   'testing::internal::string'
+ typedef ::std::string string;
+                       ^
+cur.cpp:112:25: error: 'l' was not declared in this scope
+   AbstractList<string> *l = get_init();
+                         ^
+cur.cpp:112:38: error: 'get_init' was not declared in this scope
+   AbstractList<string> *l = get_init();
+                                      ^
+cur.cpp:116:12: error: expected ';' before 'ss'
+     string ss("fail");
+            ^
+cur.cpp:117:13: error: 'ss' was not declared in this scope
+     l->push(ss);
+             ^
+cur.cpp:125:12: error: type '<type error>' argument given to 'delete', expected pointer
+     delete l;
+            ^
+cur.cpp: In function 'int main(int, char**)':
+cur.cpp:199:62: error: expected type-specifier before 'MemoryLeakDetector'
+   ::testing::UnitTest::GetInstance()->listeners().Append(new MemoryLeakDetector());
+                                                              ^
+./check.sh: line 24: ./a.out: No such file or directory

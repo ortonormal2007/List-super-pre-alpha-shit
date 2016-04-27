@@ -200,7 +200,7 @@ public:
 		}
 		MyList* tmp = this->next;
 		MyList* tmpprev = this;
-		
+		cout << "shit_completely1" << endl;
 		while (index != 0 && tmp->next != NULL)
 		{
 			cout << "shit_cycle" << endl;
@@ -210,9 +210,12 @@ public:
 		}
 
 		if (index != 0) return this->_default;
+		cout << "shit_completely1" << endl;
 		tmpprev->next = tmp->next;
 		T old = tmp->data;
+		cout << "shit_completely2" << endl;
 		delete tmp;
+		cout << "shit_completely3" << endl;
 		return old;
 	}
 

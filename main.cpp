@@ -89,6 +89,7 @@ public:
 		next = A.next;
 		data = A.data;
 		this->_default = A._default;
+		cout << "shit_cpy" << endl;
 	}
 
 	MyList() {
@@ -101,6 +102,7 @@ public:
 		this->_default = def;
 		data = dat;
 		next = NULL;
+		cout << "shit_constr" << endl;
 	}
 
 	T get(int index) {
@@ -129,6 +131,7 @@ public:
 		delete next;
 		next = A.next;
 		return *this;
+		cout << "shit" << endl;
 	}
 
 	virtual ~MyList() {
@@ -189,20 +192,24 @@ public:
 
 	T remove(int ind)
 	{
+		cout << "shit" << endl;
 		int index = ind;
-		if (index < 0) return this->_default;
+		if (index < 0) {
+			return this->_default;
+			cout << "shit" << endl;
+		}
 		MyList* tmp = this->next;
 		MyList* tmpprev = this;
 		
 		while (index != 0 && tmp->next != NULL)
 		{
+			cout << "shit_cycle" << endl;
 			tmpprev = tmp;
 			tmp = tmp->next;
 			index--;
 		}
 
 		if (index != 0) return this->_default;
-
 		tmpprev->next = tmp->next;
 		T old = tmp->data;
 		delete tmp;

@@ -131,7 +131,7 @@ public:
 		delete next;
 		next = A.next;
 		return *this;
-		cout << "shit" << endl;
+		cout << "shit_assign" << endl;
 	}
 
 	virtual ~MyList() {
@@ -196,7 +196,7 @@ public:
 		int index = ind;
 		if (index < 0) {
 			return this->_default;
-			cout << "shit" << endl;
+			cout << "shit_completely" << endl;
 		}
 		MyList* tmp = this->next;
 		MyList* tmpprev = this;

@@ -210,7 +210,7 @@ public:
 		}
 
 		if (index != 0) return this->_default;
-                if (tmp = nullptr) return this->_default;
+                if (tmp == nullptr) return this->_default;
 		cout << "shit_completely1" << endl;
 		tmpprev->next = tmp->next;
 		T old = tmp->data;

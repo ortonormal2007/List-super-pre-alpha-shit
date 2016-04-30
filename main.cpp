@@ -179,7 +179,7 @@ public:
 		MyList* tmp = this;
 		while (index != 0 && tmp->next != NULL)
 		{
-			cout << "cool_cycle" << endl
+			cout << "cool_cycle" << endl;
 			tmp = tmp->next;
 			index--;
 		}

@@ -183,7 +183,7 @@ public:
 
 			}
 		} else{
-		cout << "point" << ind << endl;
+		cout << "point!" << ind << endl;
 		while (index != 0 && tmp->next != NULL)
 		{
 			tmp = tmp->next;
@@ -216,7 +216,7 @@ public:
 		}
 
 		if (index != 0) return this->_default;
-                cout << "rass3" << endl;
+				cout << "rass3" << endl;
 		tmpprev->next = tmp->next;
 		T old = tmp->data;
 		delete tmp;

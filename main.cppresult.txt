@@ -8,4 +8,36 @@ shit_constr
 shit_constr
 shit
 shit_completely1
+[       OK ] ListTest.DeleteOne
+[ RUN      ] ListTest.AddOne
+shit_constr
+cur.cpp:37: Failure
+Value of: l->len()
+  Actual: 0
+Expected: 1
+[  FAILED  ] ListTest.AddOne
+[ RUN      ] ListTest.AddAndCheckOne
+shit_constr
+cur.cpp:46: Failure
+Value of: l->get(0).c_str()
+  Actual: "EMPTY!"
+Expected: "fail"
+[  FAILED  ] ListTest.AddAndCheckOne
+[ RUN      ] ListTest.PopOne
+shit_constr
+[       OK ] ListTest.PopOne
+[ RUN      ] ListTest.PushPop
+shit_constr
+shit
 shit_completely1
+shit_completely1
+shit_completely2
+shit_completely3
+[       OK ] ListTest.PushPop
+[ RUN      ] ListTest.PushPop1E3
+shit_constr
+shit
+shit_completely1
+shit_completely1
+shit_completely2
+shit_completely3

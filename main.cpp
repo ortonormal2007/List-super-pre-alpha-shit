@@ -198,8 +198,10 @@ public:
 
 	T remove(int ind)
 	{
+		cout << "rass" << endl;
 		int index = ind;
 		if (index < 0) {
+			cout << "rass1" << endl;
 			return this->_default;
 		}
 		MyList* tmp = this->next;
@@ -207,13 +209,14 @@ public:
 		if (tmp == nullptr) return this->_default;
 		while (index != 0 && tmp->next != NULL)
 		{
+			cout << "rass2" << endl;
 			tmpprev = tmp;
 			tmp = tmp->next;
 			index--;
 		}
 
 		if (index != 0) return this->_default;
-                
+                cout << "rass3" << endl;
 		tmpprev->next = tmp->next;
 		T old = tmp->data;
 		delete tmp;

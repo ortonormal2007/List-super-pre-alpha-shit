@@ -170,11 +170,12 @@ public:
 	}
 
 	void insert(int ind, T data)
-	{
+	{	cout << "ins" << ind << endl;
 		int index = ind;
 		MyList* tmp = this;
 		MyList* A = new MyList();
 		if (ind > len()){
+			cout << "point" << endl;
 			while (tmp->next != NULL)
 			{
 				tmp = tmp->next;
@@ -182,7 +183,7 @@ public:
 
 			}
 		} else{
-
+		cout << "point" << ind << endl;
 		while (index != 0 && tmp->next != NULL)
 		{
 			tmp = tmp->next;

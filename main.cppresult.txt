@@ -4,6 +4,7 @@
 [ RUN      ] ListTest.ListLen
 [       OK ] ListTest.ListLen
 [ RUN      ] ListTest.DeleteOne
+rass
 [       OK ] ListTest.DeleteOne
 [ RUN      ] ListTest.AddOne
 ins1
@@ -18,8 +19,42 @@ point
 [ RUN      ] ListTest.PushPop
 ins0
 point0
+rass
+rass3
 [       OK ] ListTest.PushPop
 [ RUN      ] ListTest.PushPop1E3
+ins0
+point0
+rass
+rass3
+ins0
+point0
+ins0
+point0
+ins0
+point0
+ins0
+point0
+ins0
+point0
+ins0
+point0
+ins0
+point0
+ins0
+point0
+ins0
+point0
+ins0
+point0
+ins0
+point0
+ins0
+point0
+ins0
+point0
+ins0
+point0
 ins0
 point0
 ins0

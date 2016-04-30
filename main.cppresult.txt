@@ -4,7 +4,6 @@
 [ RUN      ] ListTest.ListLen
 [       OK ] ListTest.ListLen
 [ RUN      ] ListTest.DeleteOne
-shit
 [       OK ] ListTest.DeleteOne
 [ RUN      ] ListTest.AddOne
 [       OK ] ListTest.AddOne
@@ -13,7 +12,5 @@ shit
 [ RUN      ] ListTest.PopOne
 [       OK ] ListTest.PopOne
 [ RUN      ] ListTest.PushPop
-shit
 [       OK ] ListTest.PushPop
 [ RUN      ] ListTest.PushPop1E3
-shit

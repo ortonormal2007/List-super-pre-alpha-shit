@@ -223,14 +223,11 @@ public:
 
 	int len()
 	{
-		cout << "cool2" << endl;
 		int num = 0;
 		MyList* tmp = this;
 		while (tmp->next != NULL) {
-			cout << "cool3" << index << endl;
 			tmp = tmp->next;
 			num++;
-			cout << "cool4" << num << endl;
 		}
 		return num;
 	}

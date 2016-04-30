@@ -89,7 +89,6 @@ public:
 		next = A.next;
 		data = A.data;
 		this->_default = A._default;
-		cout << "shit_cpy" << endl;
 	}
 
 	MyList() {
@@ -102,7 +101,6 @@ public:
 		this->_default = def;
 		data = dat;
 		next = NULL;
-		cout << "shit_constr" << endl;
 	}
 
 	T get(int index) {
@@ -131,7 +129,6 @@ public:
 		delete next;
 		next = A.next;
 		return *this;
-		cout << "shit_assign" << endl;
 	}
 
 	virtual ~MyList() {
@@ -175,12 +172,14 @@ public:
 	void insert(int ind, T data)
 	{
 		int index = ind;
+		cout << "cool1" << index << endl;
 		if (ind > len()){
 			return;
 		}
 		MyList* tmp = this;
 		while (index != 0 && tmp->next != NULL)
 		{
+			cout << "cool_cycle" << endl
 			tmp = tmp->next;
 			index--;
 		}
@@ -196,15 +195,12 @@ public:
 		int index = ind;
 		if (index < 0) {
 			return this->_default;
-			cout << "shit_completely" << endl;
 		}
 		MyList* tmp = this->next;
 		MyList* tmpprev = this;
-		cout << "shit_completely1" << endl;
 		if (tmp == nullptr) return this->_default;
 		while (index != 0 && tmp->next != NULL)
 		{
-			cout << "shit_cycle" << endl;
 			tmpprev = tmp;
 			tmp = tmp->next;
 			index--;
@@ -212,23 +208,23 @@ public:
 
 		if (index != 0) return this->_default;
                 
-		cout << "shit_completely1" << endl;
 		tmpprev->next = tmp->next;
 		T old = tmp->data;
-		cout << "shit_completely2" << endl;
 		delete tmp;
-		cout << "shit_completely3" << endl;
 		return old;
 	}
 
 
 	int len()
 	{
+		cout << "cool2" << endl;
 		int num = 0;
 		MyList* tmp = this;
 		while (tmp->next != NULL) {
+			cout << "cool3" << index << endl;
 			tmp = tmp->next;
 			num++;
+			cout << "cool4" << num << endl;
 		}
 		return num;
 	}

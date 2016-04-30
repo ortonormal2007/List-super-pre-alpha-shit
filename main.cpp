@@ -172,21 +172,27 @@ public:
 	void insert(int ind, T data)
 	{
 		int index = ind;
-		cout << "cool1" << index << endl;
-		if (ind > len()){
-			return;
-		}
 		MyList* tmp = this;
+		MyList* A = new MyList();
+		if (ind > len()){
+			while (tmp->next != NULL)
+			{
+				tmp = tmp->next;
+				index--;
+
+			}
+		} else{
+
 		while (index != 0 && tmp->next != NULL)
 		{
-			cout << "cool_cycle" << endl;
 			tmp = tmp->next;
 			index--;
 		}
-		MyList* A = new MyList();
+
 		A->next = tmp->next;
+		}
 		tmp->next = A;
-		set(ind, data);
+		set(ind - index, data);
 	}
 
 	T remove(int ind)

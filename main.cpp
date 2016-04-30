@@ -197,7 +197,6 @@ public:
 
 	T remove(int ind)
 	{
-		cout << "shit" << endl;
 		int index = ind;
 		if (index < 0) {
 			return this->_default;

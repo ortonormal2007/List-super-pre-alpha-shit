@@ -14921,5 +14921,3 @@ ins0
 point!0
 ins0
 point!0
-ins0
-point!0

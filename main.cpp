@@ -132,7 +132,9 @@ public:
 	}
 
 	virtual ~MyList() {
-		next = NULL;
+		if (next != NULL){
+			delete next;
+		}
 	}
 
 	void sort(bool(*f) (T* first, T* second))

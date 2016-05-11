@@ -134,7 +134,7 @@ public:
 	virtual ~MyList() {
 		if (next != NULL){
 			delete next;
-		}
+		} 
 	}
 
 	void sort(bool(*f) (T* first, T* second))
@@ -221,6 +221,7 @@ public:
 				cout << "rass3" << endl;
 		tmpprev->next = tmp->next;
 		T old = tmp->data;
+		//tmp->next = NULL;
 		delete tmp;
 		return old;
 	}

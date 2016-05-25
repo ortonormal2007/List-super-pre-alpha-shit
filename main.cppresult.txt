@@ -19,3 +19,7 @@ rass3
 [ RUN      ] ListTest.PushPop1E3
 rass
 rass3
+[       OK ] ListTest.PushPop1E3
+[----------] Global test environment tear-down
+[==========] 7 tests from 1 test case ran.
+[  PASSED  ] 7 tests.
